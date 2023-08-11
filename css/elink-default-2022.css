@@ -1,0 +1,230 @@
+/* =================
+   |  SOCIAL ICONS |
+   ================= */
+   .social-icons{
+	list-style: none;
+	text-align: center;  /* alignment */
+}
+.social-icons a{
+	margin: 2px; 		/* desired gap */
+	font-size: 32px; 	/* size */
+	color: #2ea3f2; 	/* color */
+	-o-transition:.3s; /* smooth hover effect */
+	-ms-transition:.3s;
+	-moz-transition:.3s;
+	-webkit-transition:.3s;
+	/* ...and now for the proper property */
+	transition:.3s;
+}
+.social-icons a:hover{
+	color: #ffffff; /* color on hover */
+}
+/* End of Social Icons */
+
+/* =================
+   |  Back to top |
+   ================= */
+#back-top {
+	position: fixed;
+	bottom: 100px;	/* fixed distance from the bottom */
+	right: 0;
+    z-index:2;
+	/* display: none !important; uncomment this if you don't want to show the button */
+}
+
+#back-top a {
+	display: block;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+	
+	color: #ffffff;
+	background-color: #000000; /* change this to the theme color */
+	opacity: 0.5; /* Adjust transparency */
+
+	/* transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top a:hover {
+	color: #ffffff;
+}
+
+@media only screen and ( max-width: 980px ) {
+	#back-top {
+		bottom: 0;
+		right: 15px;
+	}
+	#back-top a {
+		border-bottom-left-radius: 0;
+		border-top-left-radius: 3px;
+		border-top-right-radius: 3px;
+	}
+}
+
+/* End of Back to top */
+
+/* =================
+      BLOG STYLE
+   ================= */
+
+.ds-thumbnail-blog article{
+	display: grid;
+    grid-template-columns: 52% 45%;
+    column-gap: 3%;
+    justify-content: center;
+    height: fit-content;
+	padding:20px;
+	 background-color: #fff;
+}
+.ds-thumbnail-blog  article .entry-featured-image-url{
+	grid-row: 1 /span 3;
+    width: 100%;
+    height: 100%;
+	margin-bottom:0;
+}
+.ds-thumbnail-blog article .entry-featured-image-url img{
+	width: 100%;
+    object-fit: cover;
+	
+}
+.ds-thumbnail-blog .entry-title,
+.ds-thumbnail-blog .post-meta,
+.ds-thumbnail-blog .post-content{
+	grid-column: 2;
+}
+.ds-thumbnail-blog .post-content{
+	display:grid;
+}
+.ds-thumbnail-blog .entry-title{
+	display:grid;
+	align-items:center;
+	padding-bottom:0;
+}
+.ds-thumbnail-blog article a.more-link{
+	display: inline-block;
+    padding: 0.3em 1em;
+    color: #fff;
+    border: 2px solid #291111;
+    background: #291111;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+	transition:300ms ease 0ms;
+	width:fit-content;
+	align-self:flex-end;
+}
+.ds-thumbnail-blog article a.more-link:hover{
+	
+    background: #fff;
+    border: 2px solid #291111;
+    color: #291111;
+    text-transform: uppercase;
+
+}
+@media only screen and (max-width:550px){
+	.ds-thumbnail-blog article{
+		grid-template-columns:100%;
+	}
+	.ds-thumbnail-blog  article .entry-featured-image-url,
+	.ds-thumbnail-blog .entry-title,
+	.ds-thumbnail-blog .post-meta,
+	.ds-thumbnail-blog .post-content{
+		grid-column: 1;
+	}
+	.ds-thumbnail-blog  article .entry-featured-image-url,
+	.ds-thumbnail-blog .entry-title{
+		margin-bottom:20px;
+	}
+	
+	.ds-thumbnail-blog article .entry-featured-image-url img{
+
+		height:auto;
+	}
+}
+
+
+/* End of Blog Style */
+
+/* =================
+   WOOCOMMERCE STYLE
+   ================= */
+.woocommerce div.product div.images img, .woocommerce-page div.product div.images img {
+    max-width: 335px;
+    margin: 0 auto;
+}
+
+/* messages background */
+.woocommerce .woocommerce-error, 
+.woocommerce .woocommerce-info, 
+.woocommerce .woocommerce-message {
+    background: #6A1B9A !important; /* Change this to over all theme color */
+}
+
+/* Buttons and links */
+#et_search_icon:hover, .mobile_menu_bar:before, .mobile_menu_bar:after, .et-social-icon a:hover, .comment-reply-link, .form-submit input, .entry-summary p.price ins, .woocommerce div.product span.price, .woocommerce-page div.product span.price, .woocommerce #content div.product span.price, .woocommerce-page #content div.product span.price, .woocommerce div.product p.price, .woocommerce-page div.product p.price, .woocommerce #content div.product p.price, .woocommerce-page #content div.product p.price, .woocommerce .star-rating span:before, .woocommerce-page .star-rating span:before, .woocommerce a.button.alt, .woocommerce-page a.button.alt, .woocommerce button.button.alt, .woocommerce-page button.button.alt, .woocommerce input.button.alt, .woocommerce-page input.button.alt, .woocommerce #respond input#submit.alt, .woocommerce-page #respond input#submit.alt, .woocommerce #content input.button.alt, .woocommerce-page #content input.button.alt, .woocommerce a.button, .woocommerce-page a.button, .woocommerce button.button, .woocommerce-page button.button, .woocommerce input.button, .woocommerce-page input.button, .woocommerce #respond input#submit, .woocommerce-page #respond input#submit, .woocommerce #content input.button, .woocommerce-page #content input.button, .woocommerce a.button.alt:hover, .woocommerce-page a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce-page button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce-page input.button.alt:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce-page #respond input#submit.alt:hover, .woocommerce #content input.button.alt:hover, .woocommerce-page #content input.button.alt:hover, .woocommerce a.button:hover, .woocommerce-page a.button:hover, .woocommerce button.button, .woocommerce-page button.button:hover, .woocommerce input.button:hover, .woocommerce-page input.button:hover, .woocommerce #respond input#submit:hover, .woocommerce-page #respond input#submit:hover, .woocommerce #content input.button:hover {
+    color: #000 !important; /* Change this to over all theme color */
+}
+
+/* Buttons and links on hover */
+.comment-reply-link:hover, .form-submit input:hover, .et_password_protected_form .et_submit_button:hover, .woocommerce a.button.alt:hover, .woocommerce-page a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce-page button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce-page input.button.alt:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce-page #respond input#submit.alt:hover, .woocommerce #content input.button.alt:hover, .woocommerce-page #content input.button.alt:hover, .woocommerce a.button:hover, .woocommerce-page a.button:hover, .woocommerce button.button:hover, .woocommerce-page button.button:hover, .woocommerce input.button:hover, .woocommerce-page input.button:hover, .woocommerce #respond input#submit:hover, .woocommerce-page #respond input#submit:hover, .woocommerce #content input.button:hover, .woocommerce-page #content input.button:hover {
+    background: #6A1B9A !important; /* Change this to over all theme color */
+	color: #ffffff! important;
+}
+
+/* For Products with variation */
+.woocommerce-variation-price .woocommerce-Price-amount::before {
+    content: "Unit Price: ";
+    font-size: 0.7em;
+    font-weight: 500;
+}
+.woocommerce-variation-price .woocommerce-Price-amount {
+    margin-bottom: 35px;
+    display: block;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/* End of WooCommerce */
+
+
+/* ==========================================
+   |         Responsive Style               |
+   ========================================== */
+   
+/* Large screens (1405px upwards) */
+@media only screen and ( min-width: 1405px ) { 
+	/* your css goes here */
+}
+
+/* Laptops and desktops (1100-1405px) */
+@media only screen and ( min-width: 1100px ) and ( max-width: 1405px) { 
+	/* your css goes here */
+}
+
+/* Tablets in landscape mode (981-1100px) */
+@media only screen and ( min-width: 981px ) and ( max-width: 1100px ) { 
+	/* your css goes here */
+}
+
+/* Tablets in portrait mode (768-980px) */
+@media only screen and ( min-width: 768px ) and ( max-width: 980px ) {
+	/* your css goes here */
+}
+
+/* Smartphones in landscape mode (480-768px) */
+@media only screen and ( min-width: 480px ) and ( max-width: 767px ) {
+	/* your css goes here */
+}
+
+/* Smartphones in portrait mode (0-479px) */
+@media only screen and ( max-width: 479px ) {
+	/* your css goes here */
+}
+
+/* End of Responsive Style */

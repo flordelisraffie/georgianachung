@@ -1,0 +1,349 @@
+/*
+*
+*	Theme Name: DIVI Child theme
+*	Description: Child theme for Divi theme
+*	Theme URI: http://www.elegantthemes.com/gallery/divi/
+*	Version: 2.7.5
+*	Description: Smart. Flexible. Beautiful. Divi is the most powerful theme in our collection.
+*	Author: Elegant Themes
+*	Template: Divi
+*
+*/
+
+@import url('css/fontello.css');
+
+/* Additional Font -Sample */
+
+@font-face {
+    font-family:'Poppins Regular';
+    src: url('font/Poppins-Regular.ttf');
+}
+
+
+/***************** Header **********************/
+
+#main-header {
+    background-color: rgba(255,255,255,0.87) !important;
+}
+
+header .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.logo_container {
+    position: static !important;
+    max-width: 23%;
+    width: auto !important;
+}
+
+.logo_container img {
+    vertical-align: unset !important;
+}
+
+#et-top-navigation {
+    padding: 0 !important;
+    width: 77%;
+    text-align: right;
+}
+
+.et_header_style_left #et-top-navigation nav>ul>li>a {
+    padding: 10px 20px !important;
+    font-size: 16px;
+    font-family: 'Poppins';
+    color: #000;
+    text-transform: uppercase;
+}
+
+#et-top-navigation nav>ul>li>a:hover{
+    color: #00507d !important;
+}
+
+#top-menu-nav {
+    width: 100%;
+}
+
+#top-menu {
+    width: 100%;
+}
+
+#top-menu li {
+    padding-right: 0 !important;
+}
+
+.current-menu-item a {
+    color:#00507d !important;
+    font-weight: 800;
+}
+
+/************** Primary Menu **********************/
+
+
+
+/********************* Home Page **************************/
+
+.text-with-lines h1 {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .text-with-lines h1:before,
+  .text-with-lines h1:after {
+    content: "";
+    flex: 0 1 7%;
+    border-bottom: 2px solid;
+    margin: auto;
+  }
+  
+  .text-with-lines h1:before {
+    margin-right: 10px;
+  }
+  
+  .text-with-lines h1:after {
+    margin-left: 10px;
+  }
+  
+  .btns-container {
+	display:flex;
+	flex-wrap:wrap;
+	gap:30px;
+	justify-content: center;
+    margin-top:35px;
+
+}
+.hp-readmore,
+.hp-buynow {
+	font-size: 15px;
+    color: #ffffff;
+    background-color: #003d5f;
+    font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+    padding: 12px 47px;
+    cursor: pointer;
+    border: none;
+    transition: 300ms ease 0ms;
+}
+
+.hp-readmore:hover {
+	transform: scaleX(1.15) scaleY(1.15)!important;
+	transition: 300ms ease 0ms;
+    text-transform: uppercase;
+   
+}
+
+.hp-buynow:hover {
+	transform: scaleX(1.15) scaleY(1.15)!important;
+	transition: 300ms ease 0ms;
+    text-transform: uppercase;
+}
+  
+
+
+/********************* Book Page **************************/
+
+
+
+/********************* Author Page **************************/
+
+
+
+/********************* Order Page **************************/
+
+.book-details-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+}
+.left-details {
+    font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+    font-size: 18px;
+    color: #000;
+    line-height: 1.6em;
+}
+
+.right-details {
+    font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+    font-size: 18px;
+    color: #000;
+    line-height: 1.6em;
+}
+.vertical-line {
+    border-left: 2px #000 solid;
+}
+
+
+/********************* Contact Page **************************/
+
+.et_contact_bottom_container {
+    float: left !important;
+}
+
+
+
+
+/********************* Footer **************************/
+
+
+#footer-info a.rm-favicon{
+    background: url("images/ReadersMagnet-Favicon.png") no-repeat 0 5px;
+    background-size: 40px auto;
+    padding: 10px 0 10px 42px;
+    background-position:bottom left;
+    display: inline-block;
+}
+#main-footer{
+
+    font-family: 'Poppins Regular'; /* change font family here */
+
+}
+#footer-bottom .container{
+    display: flex;
+    flex-wrap: wrap;  /* social icons will go down in small screen size*/
+    text-align: center; 
+    justify-content: center;  /* change propreties: space-between, left, right or center*/
+    max-width: 1366px; /* change the footer width size here*/
+    width:90%;  
+    gap:20px;  /* change gap between the footer bottom details and social icon */
+    align-items: center;
+    padding:10px 0 !important;
+   
+   
+}
+#footer-bottom{
+    padding:0 !important;
+    background-color: #fff; /* change the footer color here*/
+   
+}
+#footer-info{
+    font-size:15px; /* change font size here*/
+    color:#000; /* change font color here*/
+    padding:0 !important;
+}
+
+#footer-bottom  .container a{
+    text-transform: none;
+	color:#000;  /* change a tags font color here*/
+	font-weight: 400;
+}
+
+/*********** footer social icons ***********/
+
+.et-menu-social-icons{
+    order:2;
+    display: flex;
+    justify-content: space-between;
+    gap:15px;
+    margin:0;
+    align-items: center;
+}
+#footer-bottom .container .et-social-icons li{
+    margin:0;
+}
+#footer-bottom  .container .et-social-icons a{
+    vertical-align: middle;
+}
+
+.et-menu-social-icons {
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.et-menu-social-icons li a {
+    background-color: #222221 ;
+    padding: 5px;
+    border-radius: 50%;
+    color: #fff !important;
+}
+
+/******************* End of Footer **************************/
+
+
+
+/* ==========================================
+   |         Responsive Style               |
+   ========================================== */
+
+@media only screen and ( max-width: 1600px ) { 
+	/* your css goes here */
+} 
+
+@media only screen and ( max-width: 1366px ) { 
+	#main-header .container {
+        width: 90% !important;
+    }
+    .home-page-row2 {
+        width: 70% !important;
+    }
+}
+
+@media only screen and ( max-width: 1024px ) { 
+	/* your css goes here */
+}
+
+@media only screen and ( max-width: 980px ) { 
+	.mobile_menu_bar {
+        padding-top: 24px !important;
+    }
+
+    #et-top-navigation {
+        text-align: center !important;
+    }
+
+    #mobile_menu li a {
+        color:#000 !important;
+        font-size: 16px !important;
+    }
+
+    #mobile_menu .current-menu-item a {
+        color:red !important;
+    }
+
+    .logo_container {
+        max-width: 60% !important;
+    }
+    #et-top-navigation {
+        width: 40% !important;
+    }
+    .book-details-container {
+        gap: 0px;
+        flex-direction: column;
+    }
+    .vertical-line {
+        display: none !important;
+    }
+}
+
+@media only screen and ( max-width: 768px ) { 
+	/* your css goes here */
+
+}
+
+@media only screen and ( max-width: 414px ) { 
+    .logo_container {
+        max-width: 90% !important;
+    }
+    #et-top-navigation {
+        width: 10% !important;
+    }
+    .left-details { 
+        font-size: 15px;
+    }
+    .right-details { 
+        font-size: 14px;
+    }
+
+}
+@media only screen and ( max-width: 375px ) { 
+	/* your css goes here */
+
+}
+@media only screen and ( max-width: 320px ) { 
+	/* your css goes here */
+    
+}
+
+
+/* End of Responsive Style */
